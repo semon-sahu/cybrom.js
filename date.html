@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date and time</title>
+  </head>
+  <body>
+    <script>
+      const d = new Date();
+      document.write("<h1>", d, "</h1>");
+      const ans3 = d.getDate();
+      const ans2 = d.getHours();
+      const ans1 = d.getMinutes();
+      const ans4 = d.getSeconds();
+      const ans5 = d.getMilliseconds();
+      const ans6 = d.getDay();
+      const day = [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+      ];
+      const ans7 = d.getTime();
+      document.write("<h1>", ans1, "</h1>");
+      document.write("<h1>", ans2, "</h1>");
+      document.write("<h1>", ans3, "</h1>");
+      document.write("<h1>", ans4, "</h1>");
+      document.write("<h1>", ans5, "</h1>");
+      document.write("<h1>Day num:", day[ans6], "</h1>");
+      document.write("<h1>Time:", ans7, "</h1>");
+      //   document.write("<h1>", ans6, "</h1>");
+    </script>
+  </body>
+</html>

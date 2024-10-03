@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      const student = [
+        {
+          roll: 120,
+          name: "John",
+          ciy: "bhoapl",
+        },
+        {
+          roll: 121,
+          name: "semon",
+          ciy: "sehore",
+        },
+        {
+          roll: 122,
+          name: "roby",
+          ciy: "ashta",
+        },
+        {
+          roll: 123,
+          name: "aditya",
+          ciy: "rahul",
+        },
+        {
+          roll: 124,
+          name: "shiva",
+          ciy: "manoj",
+        },
+      ];
+
+      let table =
+        "<table border='1'><tr><td> roll</td><td> name</td><td> city</td>";
+      student.map((key) => {
+        table += "<tr>";
+        table += "<td>" + key.roll + "</td>";
+        table += "<td>" + key.name + "</td>";
+        table += "<td>" + key.city + "</td>";
+        table += "</tr>";
+      });
+      table += "</table>";
+      document.getElementById("demo").innerHTML = table;
+    </script>
+  </body>
+</html>

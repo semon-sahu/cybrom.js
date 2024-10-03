@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeval() {
+        document.getElementById("ct").value = "indore";
+      }
+      // // script.js
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const button = document.getElementById("colorButton");
+
+        button.addEventListener("click", () => {
+          // Generate a random color
+          const randomColor = `#${Math.floor(Math.random() * 16777215).toString(
+            16
+          )}`;
+
+          // Change the background color
+          document.body.style.backgroundColor = randomColor;
+        });
+      });
+      // function color() {
+      //   document.getElementById("colorButton").bgColor = pink;
+      // }
+      function changeimage() {
+        document.getElementById("se").src = "r2.jpeg";
+      }
+
+  
+    </script>
+  </head>
+  <body bgcolor="yellow">
+    CITY <input type="text" value="bhoapl" id="ct" />
+    <br />
+    <hr />
+    <hr />
+    <button onclick="changeval">click here</button>
+    <br />
+    <hr />
+    <hr />
+
+    <button id="colorButton">Change Background Color</button>
+    <br />
+    <hr />
+    <hr />
+
+    <button onclick="changeimage()">image change</button>
+    <br />
+    <hr />
+    <hr />
+    <img src="images.jpeg" alt="" id="se" />
+    <br />
+    <hr />
+    <hr />
+
+
+  </body>
+</html>

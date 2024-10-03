@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const num=[1,2,3]
+      //   const [a,b,c]=num;
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(c);
+      //   const student={"student:"120,"name":"sachin","city":"bhaopl"};
+      //   const {rollno,name,city}=student
+      //   console.log(rollno  )
+      //   console.log(name);
+
+      //   const num = [1, 2, 3, 4, 5, 6];
+      //   const [a, b, c, ...baki] = num;
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(c);
+      //   console.log(baki);
+
+      const student = {
+        rollno: 121,
+
+        name: "krishana",
+        city: "mathura",
+      };
+      const studetails = {
+        rollno: 300,
+
+        class: "btech",
+        grade: "A",
+      };
+      const mystu = { ...student, ...studetails };
+      console.log(mystu);
+    </script>
+  </body>
+</html>

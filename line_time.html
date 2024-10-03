@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #box {
+      background-color: red;
+      width: 20px;
+      height: 20px;
+
+    }
+  </style>
+  <body>
+    <button onclick="startNow1()">Start</button><button onclick="stopNow()">stop</button>
+    <div id="box"></div>
+    <script>
+        let mywidth=10;
+        var myint;
+        function myCal(){
+            let myObj=document.getElementById("box");
+            myObj.style.width=mywidth+"px";
+            mywidth=mywidth+1;
+        }
+        function startNow(){
+            myInt=setInterval(myCal,100);
+
+        }
+        function stopNow(){
+            clearInterval(myInt);
+        }
+    </script>
+  </body>
+</html>

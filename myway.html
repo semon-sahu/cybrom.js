@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myway() {
+        let manoj = document.getElementById("developer");
+        {
+          manoj.textContent = "welcom to cybrom";
+
+          manoj.style.color = "green";
+          manoj.style.backgroundColor = "yellow";
+          manoj.style.width = "300px";
+          manoj.style.border = "5px solid red";
+          manoj.style.borderRadius = "3px";
+          manoj.style.textAlign = "center";
+          manoj.style.padding = "50px";
+        }
+      }
+
+      function sk() {
+        let manoj = document.getElementById("click");
+        {
+          manoj.style.color = "green";
+          manoj.style.backgroundColor = "yellow";
+          manoj.style.width = "300px";
+          manoj.style.border = "5px solid red";
+          manoj.style.borderRadius = "3px";
+          manoj.style.textAlign = "center";
+          manoj.style.padding = "50px";
+          manoj.style.boxShadow = "5px 8px 10px  black";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="myway()">change</button>
+    <h1 id="developer">we are web developer</h1>
+
+    <hr />
+    <hr />
+
+    <button onclick="sk()">change</button>
+    <!-- <h1 id="click">WELCOM</h1> -->
+    <input type="text" value="welcom" id="click" />
+  </body>
+</html>

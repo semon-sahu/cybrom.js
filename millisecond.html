@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date and second for date of birth</title>
+  </head>
+  <body>
+    <script>
+      // birthday
+      let msec = Date.parse("2002-01-28  ");
+      let tsec = Date.parse("2024-09-17  ");
+      const calculate = tsec - msec;
+      document.write("<h1>", calculate, "</h1>");
+
+      // per second for till
+      let d = Date.now();
+      document.write("<h1>", d, "</h1>");
+
+      //   get full year
+
+      const s = new Date();
+      document.write("<h1>", s, "</h1>");
+      const ans = s.getFullYear();
+      document.write("<h1>", ans, "</h1>");
+
+      //year name with numbr
+      const year=y.getmonth();
+
+      const month = ["january","february","march","april","may","june","july","agust","septemmber","october",".."];
+      document.write("<h1>", year, ":", month[year], "</h1>");
+    </script>
+  </body>
+</html>

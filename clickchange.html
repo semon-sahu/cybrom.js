@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      <!-- // colour change para property -->
+
+      function demo() {
+        document.getElementById("para").style.color = "red";
+        document.getElementById("para").style.width = "400px";
+        document.getElementById("para").style.fontSize = "40px";
+      }
+
+      function display() {
+        let semon = document.getElementById("student");
+        {
+          semon.style.color = "voilet";
+          semon.style.backgroundColor = "yellow";
+          semon.style.width = "150px";
+          semon.style.border = "5px solid red";
+          semon.style.borderRadius = "50%";
+          semon.style.textAlign = "center";
+        }
+      }
+      function myway() {
+        let manoj = document.getElementById("developer");
+        {
+          manoj.style.color = "green";
+          manoj.style.backgroundColor = "yellow";
+          manoj.style.width = "300px";
+          manoj.style.border = "5px solid red";
+          manoj.style.borderRadius = "3px";
+          manoj.style.textAlign = "center";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- //click karke colour change karna hai -->
+
+    <button ondblclick="demo()">click here for change color</button>
+    <p id="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod beatae, at
+      ullam dignissimos obcaecati tenetur voluptatum tempora iure minima debitis
+      numquam culpa nulla doloremque neque officia nam consequuntur accusamus.
+      Similique temporibus ratione pariatur dolorum, explicabo distinctio
+      necessitatibus voluptatem unde quam iusto exercitationem ipsa, ipsam ipsum
+      recusandae a. Illo, molestiae corrupti.
+    </p>
+    <hr />
+    <hr />
+
+    <!-- change on click condition -->
+
+    <button onclick="display()">change</button>
+    <h1 id="student">we are studen from cybrom</h1>
+
+    <hr />
+    <hr />
+
+    <button onclick="myway()">change</button>
+    <h1 id="developer">we are web developer</h1>
+  </body>
+</html>
